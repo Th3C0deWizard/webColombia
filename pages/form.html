@@ -4,109 +4,188 @@
     <title>Web Colombia</title>
     <meta name="title" content="Web Colombia" />
     <meta charset="utf8" />
-    <meta name="description" content="This is the page to register or log in." />
+    <meta
+      name="description"
+      content="This is the page to register or log in."
+    />
     <meta
       name="keywords"
       content="html, colombia, educación, login, metadatos, web, web colombia"
     />
     <meta name="author" content="Just Two Devs" />
     <meta name="application-name" content="Web Colombia" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="../styles/form.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
   </head>
   <body>
     <header class="header">
-      <img src="static/logo.png" alt="Web Colombia logo" />
+      <a href="/">
+        <img class="logo" src="../static/logo.ico" alt="Web Colombia logo" />
+      </a>
       <nav>
-         <ul>
-            <li><a href="./">About</a></li>
-            <li><a href="./">Meet Colombia!</a></li>
-            <li><a href="./">What's new?</a></li>
-        </ul> 
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#meet">Meet Colombia!</a></li>
+          <li><a href="#news">What's new?</a></li>
+        </ul>
       </nav>
     </header>
     <main class="main-container" id="main-container">
-      <section class="form-container sign-up">
-        <form name="sign-up" method="post" action="/sign-up">
-          <h1>Crear una cuenta</h1>
-          <fieldset class="social-icons">
-            <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
-            <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
-            <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
-          </fieldset>
-          <div class="divider-container">
-            <div class="divider"> </div>
-            O
-            <div class="divider"></div>
+      <section class="forms-container">
+        <section class="form-container sign-up">
+          <form name="sign-up" method="post" action="/sign-up">
+            <h1>Crear una cuenta</h1>
+            <fieldset class="social-icons">
+              <a href="#" class="icon"
+                ><i class="fa-brands fa-google-plus-g"></i
+              ></a>
+              <a href="#" class="icon"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+              <a href="#" class="icon"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </fieldset>
+            <div class="divider-container">
+              <div class="divider"></div>
+              O
+              <div class="divider"></div>
+            </div>
+            <fieldset class="input-container">
+              <i class="fa-solid fa-user"></i>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Nombre(s)"
+              />
+            </fieldset>
+            <fieldset class="input-container">
+              <i class="fa-solid fa-user"></i>
+              <input
+                type="text"
+                id="apellido"
+                name="apellido"
+                placeholder="Apellido(s)"
+              />
+            </fieldset>
+            <fieldset class="input-container">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" id="email" name="email" placeholder="Email" />
+            </fieldset>
+            <fieldset class="input-container">
+              <i class="fa-solid fa-phone"></i>
+              <input
+                type="tel"
+                id="telefono"
+                name="telefono"
+                placeholder="Celular"
+              />
+            </fieldset>
+            <fieldset class="input-container">
+              <i class="fa-solid fa-calendar"></i>
+              <input
+                type="date"
+                id="birthday"
+                name="birthday"
+                placeholder="Fecha cumpleaños"
+              />
+            </fieldset>
+            <fieldset class="input-container">
+              <i class="fa-solid fa-lock"></i>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Contraseña"
+              />
+            </fieldset>
+            <input type="submit" value="Registarse" class="submit" />
+          </form>
+        </section>
+        <section class="form-container sign-in">
+          <form name="sign-in" method="post" action="/sign-in">
+            <h1>Iniciar sesión</h1>
+            <fieldset class="social-icons">
+              <a href="#" class="icon"
+                ><i class="fa-brands fa-google-plus-g"></i
+              ></a>
+              <a href="#" class="icon"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+              <a href="#" class="icon"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </fieldset>
+            <fieldset class="input-container">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" id="email" name="email" placeholder="Email" />
+            </fieldset>
+            <fieldset class="input-container">
+              <i class="fa-solid fa-lock"></i>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Contraseña"
+              />
+            </fieldset>
+            <a href="#">¿Olvido su contraseña?</a>
+            <input type="submit" value="Ingresar" class="submit" />
+          </form>
+        </section>
+        <aside class="info-container">
+          <div class="info-panel info-left">
+            <h1>Bienvenido de vuelta!</h1>
+            <p>Ingresa tus credenciales para seguir aportando!</p>
+            <input
+              type="submit"
+              value="Iniciar Sesión"
+              class="submit-2"
+              id="login"
+            />
           </div>
-          <fieldset class="input-container">
-            <i class="fa-solid fa-user"></i>
-            <input type="text" id="nombre" name="nombre" placeholder="Nombre(s)">
-           </fieldset >
-          <fieldset class="input-container">
-            <i class="fa-solid fa-user"></i>
-            <input type="text" id="apellido" name="apellido" placeholder="Apellido(s)">
-          </fieldset>
-          <fieldset class="input-container">
-            <i class="fa-solid fa-envelope"></i>
-            <input type="email" id="email" name="email" placeholder="Email">
-          </fieldset>
-          <fieldset class="input-container">
-            <i class="fa-solid fa-phone"></i>
-            <input type="tel" id="telefono" name="telefono" placeholder="Celular">
-          </fieldset>
-          <fieldset class="input-container">
-            <i class="fa-solid fa-calendar"></i>
-            <input type="date" id="birthday" name="birthday" placeholder="Fecha cumpleaños">
-          </fieldset>
-          <fieldset class="input-container">
-            <i class="fa-solid fa-lock"></i>
-            <input type="password" id="password" name="password" placeholder="Contraseña">
-          </fieldset>
-          <input type="submit" value="Registarse" class="submit">
-      </form>
+          <div class="info-panel info-right">
+            <h1>Q'hubo parcero!</h1>
+            <p>
+              Registarte para aportar al conocimiento sobre Colombia y para
+              hacer parte de esta familia
+            </p>
+            <input
+              type="submit"
+              value="Registrarse"
+              class="submit-2"
+              id="register"
+            />
+          </div>
+        </aside>
       </section>
-      <section class="form-container sign-in">
-        <form name="sign-in" method="post" action="/sign-in">
-          <h1>Iniciar sesión</h1>
-          <fieldset class="social-icons">
-            <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
-            <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
-            <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
-          </fieldset>
-          <fieldset class="input-container">
-            <i class="fa-solid fa-envelope"></i>
-            <input type="email" id="email" name="email" placeholder="Email">
-          </fieldset>
-          <fieldset class="input-container">
-            <i class="fa-solid fa-lock"></i>
-            <input type="password" id="password" name="password" placeholder="Contraseña">
-          </fieldset>
-          <a href="#">¿Olvido su contraseña?</a>
-          <input type="submit" value="Ingresar" class="submit">
-      </form>
-      </section>
-      <aside class="info-container">
-
-        <div class="info-panel info-left">
-          <h1>Bienvenido de vuelta!</h1>
-          <p>Ingresa tus credenciales para seguir aportando!</p>
-          <input type="submit" value="Iniciar Sesión" class="submit-2" id="login">
-      </div>
-      <div class="info-panel info-right">
-          <h1>Q'hubo parcero!</h1>
-          <p>Registarte para aportar al conocimiento sobre Colombia y para hacer parte de esta familia</p>
-          <input type="submit" value="Registrarse" class="submit-2" id="register">
-      </div>
-      </aside>
     </main>
-    <footer>
-      
-      Just Two Devs &#169
+    <footer class="footer">
+      <section class="footer-social">
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </section>
+      <ul class="footer-list">
+        <li class="footer-col"><a href="#">Home</a></li>
+        <li class="footer-col"><a href="#">Services</a></li>
+        <li class="footer-col"><a href="#">About</a></li>
+        <li class="footer-col"><a href="#">Terms</a></li>
+        <li class="footer-col"><a href="#">Privacy Policy</a></li>
+      </ul>
+      <p class="copyright">JustTwoDevs © 2024</p>
     </footer>
     <script src="../script.js"></script>
   </body>
 </html>
-

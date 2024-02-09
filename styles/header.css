@@ -1,0 +1,39 @@
+.header {
+  background: #ffe000;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  width: 32px;
+  height: 32px;
+}
+
+.header img {
+}
+
+.header nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.header nav ul li a {
+  display: block;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+.header nav ul li a:hover {
+  background: #ffa000;
+}
+
+.header nav ul li a {
+  text-decoration: none;
+  color: blue;
+}

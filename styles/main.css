@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #8fd6ff;
+  font-family: sans-serif;
+}
+
+h1 {
+  color: #fb0000;
+  font-size: 4rem;
+}
+
+h2 {
+  color: #fb0000;
+  font-size: 2rem;
+}
+
+h3 {
+  margin: 0;
+  color: #bbb000;
+  font-size: 1.5rem;
+}
+
+main {
+  padding: 1rem;
+}
+
+.hero {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  text-align: center;
+}
+
+.about {
+}
+
+.card {
+  border: gray solid 0.15rem;
+  border-radius: 1rem;
+  padding: 0.6rem;
+}
+
+.card div {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+}

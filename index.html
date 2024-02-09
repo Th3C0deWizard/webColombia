@@ -11,73 +11,149 @@
     />
     <meta name="author" content="Just Two Devs" />
     <meta name="application-name" content="Web Colombia" />
-    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="icon" type="image/x-icon" href="static/favicon1.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
   </head>
   <body>
     <header class="header">
-      <img src="static/logo.png" alt="Web Colombia logo" />
+      <a href="/">
+        <img class="logo" src="static/logo.ico" alt="Web Colombia logo" />
+      </a>
       <nav>
-         <ul>
-            <li><a href="./">About</a></li>
-            <li><a href="./">Meet Colombia!</a></li>
-            <li><a href="./">What's new?</a></li>
-        </ul> 
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#meet">Meet Colombia!</a></li>
+          <li><a href="#news">What's new?</a></li>
+        </ul>
       </nav>
     </header>
     <main>
       <section class="hero">
-       <h1>This is Colombia!</h1> 
+        <h1>This is Colombia!</h1>
       </section>
-      <section class="about">
+      <section id="about" class="about">
         <h2>About this project</h2>
         <p>
-          Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.
+          Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit
+          enim labore culpa sint ad nisi Lorem pariatur mollit ex esse
+          exercitation amet. Nisi anim cupidatat excepteur officia.
+          Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate
+          voluptate dolor minim nulla est proident. Nostrud officia pariatur ut
+          officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit
+          commodo officia dolor Lorem duis laboris cupidatat officia voluptate.
+          Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis
+          officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis
+          sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea
+          consectetur et est culpa et culpa duis.
         </p>
       </section>
-      <section class="meet-colombia">
+      <section id="meet" class="meet-colombia">
         <h2>Meet Colombia!</h2>
-        <article>
+        <article class="card">
           <h3>Nuestras reservas naturales</h3>
-          <img src="" alt="Imagen de reserva natural X">
-          <p>
-            Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.
-          </p>
+          <div>
+            <img
+              src="static/caño-cristales-rio-colombia.jpg"
+              alt="Imagen de reserva natural X"
+            />
+            <p>
+              Lorem ipsum dolor sit amet, officia excepteur ex fugiat
+              reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit
+              ex esse exercitation amet. Nisi anim cupidatat excepteur officia.
+              Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet
+              voluptate voluptate dolor minim nulla est proident. Nostrud
+              officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex
+              occaecat reprehenderit commodo officia dolor Lorem duis laboris
+              cupidatat officia voluptate. Culpa proident adipisicing id nulla
+              nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua
+              reprehenderit commodo ex non excepteur duis sunt velit enim.
+              Voluptate laboris sint cupidatat ullamco ut ea consectetur et est
+              culpa et culpa duis.
+            </p>
+          </div>
         </article>
         <article>
           <h3>Comunidades indigenas</h3>
-          <img src="" alt="Imagen de comunidad indigena X">
+          <img src="" alt="Imagen de comunidad indigena X" />
           <p>
-            Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.
+            Lorem ipsum dolor sit amet, officia excepteur ex fugiat
+            reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit
+            ex esse exercitation amet. Nisi anim cupidatat excepteur officia.
+            Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate
+            voluptate dolor minim nulla est proident. Nostrud officia pariatur
+            ut officia. Sit irure elit esse ea nulla sunt ex occaecat
+            reprehenderit commodo officia dolor Lorem duis laboris cupidatat
+            officia voluptate. Culpa proident adipisicing id nulla nisi laboris
+            ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo
+            ex non excepteur duis sunt velit enim. Voluptate laboris sint
+            cupidatat ullamco ut ea consectetur et est culpa et culpa duis.
           </p>
         </article>
         <article>
           <h3>Conoce nuestra historia</h3>
-          <img src="" alt="Imagen de suceso historico">
+          <img src="" alt="Imagen de suceso historico" />
           <p>
-            Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.
+            Lorem ipsum dolor sit amet, officia excepteur ex fugiat
+            reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit
+            ex esse exercitation amet. Nisi anim cupidatat excepteur officia.
+            Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate
+            voluptate dolor minim nulla est proident. Nostrud officia pariatur
+            ut officia. Sit irure elit esse ea nulla sunt ex occaecat
+            reprehenderit commodo officia dolor Lorem duis laboris cupidatat
+            officia voluptate. Culpa proident adipisicing id nulla nisi laboris
+            ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo
+            ex non excepteur duis sunt velit enim. Voluptate laboris sint
+            cupidatat ullamco ut ea consectetur et est culpa et culpa duis.
           </p>
         </article>
       </section>
-      <section class="news">
-        <h2>Qué hay de nuevo en nuestra comunidad?</h2>
+      <section id="news" class="news">
+        <h2>What's new in our community?</h2>
         <article>
           <h3>Un vistaso a la bolsa de valores Colombiana</h3>
           <p>
-            Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
+            Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint
+            cillum sint consectetur cupidatat.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.
+            Lorem ipsum dolor sit amet, officia excepteur ex fugiat
+            reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit
+            ex esse exercitation amet. Nisi anim cupidatat excepteur officia.
+            Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate
+            voluptate dolor minim nulla est proident. Nostrud officia pariatur
+            ut officia. Sit irure elit esse ea nulla sunt ex occaecat
+            reprehenderit commodo officia dolor Lorem duis laboris cupidatat
+            officia voluptate. Culpa proident adipisicing id nulla nisi laboris
+            ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo
+            ex non excepteur duis sunt velit enim. Voluptate laboris sint
+            cupidatat ullamco ut ea consectetur et est culpa et culpa duis.
           </p>
         </article>
       </section>
     </main>
-    <footer>
-      Just Two Devs &#169
-      <ul>
-        <li>Facebook</li>
-        <li>X</li>
-        <li>Instagram</li>
+    <footer class="footer">
+      <section class="footer-social">
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </section>
+      <ul class="footer-list">
+        <li class="footer-col"><a href="#">Home</a></li>
+        <li class="footer-col"><a href="#">Services</a></li>
+        <li class="footer-col"><a href="#">About</a></li>
+        <li class="footer-col"><a href="#">Terms</a></li>
+        <li class="footer-col"><a href="#">Privacy Policy</a></li>
       </ul>
+      <p class="copyright">JustTwoDevs © 2024</p>
     </footer>
   </body>
 </html>
