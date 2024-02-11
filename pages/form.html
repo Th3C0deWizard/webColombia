@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
   <head>
     <title>Web Colombia</title>
@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="../styles/form.css" />
     <link rel="stylesheet" href="../styles/footer.css" />
     <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="icon" type="image/x-icon" href="../static/favicon1.ico" />
   </head>
   <body>
     <header class="header">
@@ -29,10 +30,24 @@
       </a>
       <nav>
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#meet">Meet Colombia!</a></li>
-          <li><a href="#news">What's new?</a></li>
+          <li>
+            <i class="fa-solid fa-book-atlas"></i
+            ><a href="/index.html#meet">Meet Colombia!</a>
+          </li>
+          <li>
+            <i class="fa-regular fa-newspaper"></i
+            ><a href="/index.html#news">What's new?</a>
+          </li>
         </ul>
+        <section class="righ-header">
+          <a href="/pages/write.html"
+            ><i class="fa-regular fa-comment fa-xl"></i
+          ></a>
+          <div class="login-btn">
+            <i class="fa-solid fa-right-to-bracket"></i
+            ><a href="/pages/form.html">Login</a>
+          </div>
+        </section>
       </nav>
     </header>
     <main class="main-container" id="main-container">
@@ -57,7 +72,7 @@
               O
               <div class="divider"></div>
             </div>
-            <fieldset class="input-container">
+            <div class="input-container">
               <i class="fa-solid fa-user"></i>
               <input
                 type="text"
@@ -65,8 +80,8 @@
                 name="nombre"
                 placeholder="Nombre(s)"
               />
-            </fieldset>
-            <fieldset class="input-container">
+            </div>
+            <div class="input-container">
               <i class="fa-solid fa-user"></i>
               <input
                 type="text"
@@ -74,12 +89,12 @@
                 name="apellido"
                 placeholder="Apellido(s)"
               />
-            </fieldset>
-            <fieldset class="input-container">
+            </div>
+            <div class="input-container">
               <i class="fa-solid fa-envelope"></i>
               <input type="email" id="email" name="email" placeholder="Email" />
-            </fieldset>
-            <fieldset class="input-container">
+            </div>
+            <div class="input-container">
               <i class="fa-solid fa-phone"></i>
               <input
                 type="tel"
@@ -87,8 +102,8 @@
                 name="telefono"
                 placeholder="Celular"
               />
-            </fieldset>
-            <fieldset class="input-container">
+            </div>
+            <div class="input-container">
               <i class="fa-solid fa-calendar"></i>
               <input
                 type="date"
@@ -96,8 +111,8 @@
                 name="birthday"
                 placeholder="Fecha cumpleaños"
               />
-            </fieldset>
-            <fieldset class="input-container">
+            </div>
+            <div class="input-container">
               <i class="fa-solid fa-lock"></i>
               <input
                 type="password"
@@ -105,7 +120,7 @@
                 name="password"
                 placeholder="Contraseña"
               />
-            </fieldset>
+            </div>
             <input type="submit" value="Registarse" class="submit" />
           </form>
         </section>
@@ -124,11 +139,11 @@
                 ><i class="fa-brands fa-linkedin-in"></i
               ></a>
             </fieldset>
-            <fieldset class="input-container">
+            <div class="input-container">
               <i class="fa-solid fa-envelope"></i>
               <input type="email" id="email" name="email" placeholder="Email" />
-            </fieldset>
-            <fieldset class="input-container">
+            </div>
+            <div class="input-container">
               <i class="fa-solid fa-lock"></i>
               <input
                 type="password"
@@ -136,15 +151,18 @@
                 name="password"
                 placeholder="Contraseña"
               />
-            </fieldset>
-            <a href="#">¿Olvido su contraseña?</a>
+            </div>
+            <a href="#">¿Olvidaste la contraseña?</a>
             <input type="submit" value="Ingresar" class="submit" />
           </form>
         </section>
         <aside class="info-container">
           <div class="info-panel info-left">
-            <h1>Bienvenido de vuelta!</h1>
-            <p>Ingresa tus credenciales para seguir aportando!</p>
+            <h1>¿Ya estas registardo?</h1>
+            <p>
+              Ingresa tus credenciales para seguir aportando y hacer de Colombia
+              una potencia del turismo y conocimiento
+            </p>
             <input
               type="submit"
               value="Iniciar Sesión"
@@ -153,10 +171,15 @@
             />
           </div>
           <div class="info-panel info-right">
-            <h1>Q'hubo parcero!</h1>
+            <h1>
+              Q'hubo parcero!<br />
+              ¿Aún no estas registrado?
+            </h1>
             <p>
               Registarte para aportar al conocimiento sobre Colombia y para
-              hacer parte de esta familia
+              hacer parte de esta familia. <br />
+              Nuestro objetivo es hacer de Colombia un país más educado y
+              turístico, además de dar a conocer nuestra Cultura y Tradiciones.
             </p>
             <input
               type="submit"

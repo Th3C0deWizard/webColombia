@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Web Colombia</title>
+    <meta name="title" content="Web Colombia" />
+    <meta charset="utf8" />
+    <meta
+      name="description"
+      content="This is a page to contribute to knowledge about Colombia"
+    />
+    <meta
+      name="keywords"
+      content="html, colombia, educación, conocimiento, contribución,"
+    />
+    <meta name="author" content="Just Two Devs" />
+    <meta name="application-name" content="Web Colombia" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../styles/write.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="icon" type="image/x-icon" href="../static/favicon1.ico" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="/">
+        <img class="logo" src="../static/logo.ico" alt="Web Colombia logo" />
+      </a>
+      <nav>
+        <ul>
+          <li>
+            <i class="fa-solid fa-book-atlas"></i
+            ><a href="/index.html#meet">Meet Colombia!</a>
+          </li>
+          <li>
+            <i class="fa-regular fa-newspaper"></i
+            ><a href="/index.html#news">What's new?</a>
+          </li>
+        </ul>
+        <section class="righ-header">
+          <a href="/pages/write.html"
+            ><i class="fa-regular fa-comment fa-xl"></i
+          ></a>
+          <div class="login-btn">
+            <i class="fa-solid fa-right-to-bracket"></i
+            ><a href="/pages/form.html">Login</a>
+          </div>
+        </section>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <h1>Es hora de aportar al conocimiento sobre Colombia</h1>
+        <p>
+          Comparte tus conocimientos sobre Colombia para que más personas puedan
+          conocer y disfrutar de nuestro país. Aporta a la educación y el
+          turismo en Colombia. ¡Es hora de compartir!
+        </p>
+      </section>
+      <section class="steps">
+        <article class="yellow">
+          <i class="fa-regular fa-newspaper fa-3x"></i>
+          <h2>Regístrate</h2>
+          <p>
+            <mark>Regístrate</mark> en nuestra plataforma para que puedas
+            <mark>compartir</mark> tus <mark>conocimientos</mark> sobre
+            Colombia.
+          </p>
+        </article>
+        <article class="blue">
+          <i class="fa-solid fa-pen-nib fa-3x"></i>
+          <h2>Escribe</h2>
+          <p>
+            <mark>Rellena el formulario</mark> a continuación sobre el nuevo
+            conocimiento que deseas aportar.
+          </p>
+        </article>
+        <article class="red">
+          <i class="fa-solid fa-upload fa-3x"></i>
+          <h2>Publica</h2>
+          <p>
+            Por último, <mark>envía</mark> la información para que sea revisada
+            y posteriormente publicada.
+          </p>
+        </article>
+      </section>
+      <section class="container-form">
+        <form
+          action="/postColombia"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <section class="information">
+            <fieldset class="required-information yellow">
+              <legend>Información Principal</legend>
+              <div class="input-box">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  autocomplete="off"
+                  required
+                />
+                <label for="name">Nombre</label>
+              </div>
+              <div class="input-box">
+                <select name="category" id="category" required>
+                  <option disabled selected>- ELIGE UNA OPCIÓN -</option>
+                  <optgroup label="Naturaleza">
+                    <option value="Reserva Natural">Reserva Natural</option>
+                    <option value="Parque Nacional">Parque Nacional</option>
+                    <option value="Playa">Playa</option>
+                  </optgroup>
+                  <optgroup label="Cultura">
+                    <option value="Museo">Museo</option>
+                    <option value="Festival">Festival</option>
+                    <option value="Gastronomía">Gastronomía</option>
+                  </optgroup>
+                  <optgroup label="Historia">
+                    <option value="Monumento">Monumento</option>
+                    <option value="Sitio Arqueológico">
+                      Sitio Arqueológico
+                    </option>
+                    <option value="Casa Histórica">Casa Histórica</option>
+                  </optgroup>
+                </select>
+                <label for="category">Categoria</label>
+              </div>
+              <div class="input-box">
+                <textarea
+                  name="description"
+                  id="description"
+                  autocomplete="off"
+                  rows="7"
+                  required
+                >
+                </textarea>
+                <label for="description">Descripción</label>
+              </div>
+              <div class="input-box">
+                <input type="file" name="image" id="image" autocomplete="off" />
+                <label for="image">Imagen</label>
+              </div>
+            </fieldset>
+            <fieldset class="optional-information blue">
+              <legend>Información Adicional</legend>
+              <div class="input-box">
+                <input
+                  type="text"
+                  name="numeric"
+                  id="numeric"
+                  autocomplete="off"
+                  required
+                />
+                <label for="numeric">Nombre atributo númerico</label>
+              </div>
+              <div class="input-box">
+                <input
+                  type="number"
+                  name="numericValue"
+                  id="numericValue"
+                  autocomplete="off"
+                  required
+                />
+                <label for="numericValue">Valor númerico</label>
+              </div>
+              <div class="input-box">
+                <input
+                  type="text"
+                  name="text"
+                  id="text"
+                  autocomplete="off"
+                  required
+                />
+                <label for="text">Nombre atributo texto</label>
+              </div>
+              <div class="input-box">
+                <input
+                  type="text"
+                  name="textValue"
+                  id="textValue"
+                  autocomplete="off"
+                  required
+                />
+                <label for="textValue">Valor texto</label>
+              </div>
+              <div class="input-box">
+                <input
+                  type="text"
+                  name="date"
+                  id="date"
+                  autocomplete="off"
+                  required
+                />
+                <label for="date">Nombre atributo fecha</label>
+              </div>
+              <div class="input-box">
+                <input
+                  type="date"
+                  name="dateValue"
+                  id="dateValue"
+                  autocomplete="off"
+                />
+                <label for="dateValue">Valor fecha</label>
+              </div>
+            </fieldset>
+          </section>
+          <fieldset class="send-information red">
+            <legend>Envio</legend>
+            <label for="anonym">¿Quiere que su envio sea anonimo?</label>
+            <div class="radio">
+              <input type="radio" name="anonym" id="anonym" value="true" />
+              Si
+              <input type="radio" name="anonym" id="anonym" value="false" />
+              No
+            </div>
+            <div class="terms">
+              <input type="checkbox" name="terms" id="terms" />
+              <label for="terms">Acepta los terminos y condiciones</label>
+            </div>
+            <input type="submit" value="Enviar" />
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="footer-social">
+        <address class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </address>
+      </section>
+      <ul class="footer-list">
+        <li class="footer-col"><a href="#">Home</a></li>
+        <li class="footer-col"><a href="#">Services</a></li>
+        <li class="footer-col"><a href="#">About</a></li>
+        <li class="footer-col"><a href="#">Terms</a></li>
+        <li class="footer-col"><a href="#">Privacy Policy</a></li>
+      </ul>
+      <p class="copyright">JustTwoDevs © 2024</p>
+    </footer>
+  </body>
+</html>

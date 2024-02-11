@@ -1,0 +1,202 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  background-image: url("https://www.civitatis.com/f/zonas/region-andina/region-andina.jpg");
+  background-size: cover;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 1.4rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 0;
+  width: 60%;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-around;
+  margin: 3rem;
+  gap: 5rem;
+}
+
+.steps article {
+  text-align: center;
+  transition: 0.5s;
+}
+
+.steps article:hover {
+  transform: scale(1.15);
+}
+
+.steps p {
+  color: rgb(98, 98, 98);
+}
+
+.yellow {
+  color: #f3c611;
+}
+
+.blue {
+  color: #1075db;
+}
+
+.red {
+  color: #e84118;
+}
+
+.container-form {
+  background: linear-gradient(to right, #ebeaea, #d4ddfb);
+  min-height: 65vh;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin: 3rem;
+  gap: 2.5rem;
+}
+
+.information {
+  display: flex;
+  gap: 2.5rem;
+  width: 100%;
+}
+
+.information fieldset {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input-box {
+  position: relative;
+  width: 96%;
+}
+
+.input-box input,
+.input-box textarea,
+.input-box select {
+  width: 100%;
+  padding: 10px;
+  border: 1.5px solid transparent;
+  background: #eee;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1rem;
+  transition: 0.8s;
+  color: black;
+}
+
+.input-box label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  transition: 0.5s;
+  color: #6b6b6b;
+}
+
+.input-box input:focus,
+.input-box textarea:focus,
+.input-box select:focus {
+  border: 1.5px solid #0573b8;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label,
+.input-box textarea:focus ~ label,
+.input-box textarea:valid ~ label,
+.input-box select:focus ~ label,
+.input-box select:valid ~ label {
+  transform: translateX(10px) translateY(-11px);
+  font-size: 0.8rem;
+  padding: 1.5px 10px;
+  background: #0573b8;
+  color: white;
+  border-radius: 2px;
+  letter-spacing: 0.5px;
+}
+.radio,
+.terms {
+  display: flex;
+  gap: 1rem;
+  color: black;
+}
+
+input[type="checkbox"] {
+  width: 1.3rem;
+}
+
+fieldset {
+  gap: 1.5rem;
+  padding-top: 1rem;
+  border-radius: 20px;
+  background: white;
+  padding: 2rem;
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.send-information {
+  display: flex;
+  flex-direction: column;
+}
+
+.send-information label {
+  color: black;
+}
+
+input[type="submit"] {
+  background-color: #0d00ff;
+  color: #fff;
+  font-size: 12px;
+  padding: 10px 45px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+input[type="submit"]:hover {
+  background-color: #fff647;
+  color: black;
+}
+
+legend {
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: white;
+  border-radius: 10px;
+  padding: 0.5rem 1rem 0rem 1rem;
+}
+
+mark {
+  background-color: #c1f1ff;
+  padding: 0.2rem;
+  border-radius: 5px;
+}

@@ -1,17 +1,21 @@
 .header {
-  background: #ffe000;
+  background: #fff;
   display: flex;
   justify-content: space-between;
 }
 
 .logo {
-  padding: 0.5rem;
+  margin-left: 1rem;
   border-radius: 0.5rem;
-  width: 32px;
-  height: 32px;
+  width: 3rem;
+  height: 3rem;
 }
 
-.header img {
+nav {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header nav ul {
@@ -21,19 +25,81 @@
   gap: 1rem;
   list-style-type: none;
   overflow: hidden;
+  height: 100%;
 }
 
-.header nav ul li a {
-  display: block;
-  padding: 1rem;
-  font-size: 1.2rem;
+.header nav ul li {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  gap: 0.6rem;
+  border-radius: 1.5rem;
+  transition: 0.7s;
 }
 
-.header nav ul li a:hover {
-  background: #ffa000;
+.header nav ul li:hover {
+  background: #fff647;
 }
 
-.header nav ul li a {
+.header nav ul li i {
+  color: #0d00ff;
+}
+
+a {
+  font-size: 1.1rem;
+  display: inline-block;
   text-decoration: none;
-  color: blue;
+  color: black;
+}
+
+.righ-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.righ-header > a {
+  border-radius: 1.5rem;
+  padding: 0.5rem;
+  transition: 0.7s;
+}
+
+.righ-header i {
+  color: #0d00ff;
+}
+
+.righ-header > a:hover {
+  background: #fff647;
+}
+
+.login-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-right: 2rem;
+  border-radius: 1.5rem;
+  padding: 0.5rem;
+  background: #1774ee;
+  transition: 0.7s;
+}
+
+.login-btn:hover {
+  background: #fff647;
+}
+
+.login-btn i {
+  color: white;
+}
+
+.login-btn:hover i {
+  color: #0d00ff;
+}
+
+.login-btn a {
+  color: white;
+}
+
+.login-btn:hover a {
+  color: black;
 }
