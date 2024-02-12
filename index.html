@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
   <head>
     <title>Web Colombia</title>
@@ -11,26 +11,40 @@
     />
     <meta name="author" content="Just Two Devs" />
     <meta name="application-name" content="Web Colombia" />
-    <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/header.css" />
-    <link rel="stylesheet" href="styles/footer.css" />
-    <link rel="icon" type="image/x-icon" href="static/favicon1.ico" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="icon" type="image/x-icon" href="static/favicon1.ico" />
   </head>
   <body>
     <header class="header">
       <a href="/">
-        <img class="logo" src="static/logo.ico" alt="Web Colombia logo" />
+        <img class="logo" src="../static/logo.ico" alt="Web Colombia logo" />
       </a>
       <nav>
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#meet">Meet Colombia!</a></li>
-          <li><a href="#news">What's new?</a></li>
+          <li>
+            <i class="fa-solid fa-book-atlas"></i
+            ><a href="/index.html#meet">Meet Colombia!</a>
+          </li>
+          <li>
+            <i class="fa-regular fa-newspaper"></i
+            ><a href="/index.html#news">What's new?</a>
+          </li>
         </ul>
+        <section class="righ-header">
+          <a href="/pages/write.html"
+            ><i class="fa-regular fa-comment fa-xl"></i
+          ></a>
+          <div class="login-btn">
+            <i class="fa-solid fa-right-to-bracket"></i
+            ><a href="/pages/form.html">Login</a>
+          </div>
+        </section>
       </nav>
     </header>
     <main>

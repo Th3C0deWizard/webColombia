@@ -21,13 +21,14 @@ footer {
   width: 40px;
   height: 40px;
   text-decoration: none;
+  transition: 0.7s;
 }
 
 .footer-social a:hover {
-  opacity: 0.9;
+  background: #fff647;
 }
 
-i {
+.social-links i {
   color: #0d00ff;
 }
 
