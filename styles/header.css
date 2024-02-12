@@ -7,11 +7,8 @@
 .logo {
   padding: 0.5rem;
   border-radius: 0.5rem;
-  width: 32px;
-  height: 32px;
-}
-
-.header img {
+  width: 3rem;
+  height: 3rem;
 }
 
 .header nav ul {
@@ -24,7 +21,7 @@
 }
 
 .header nav ul li a {
-  display: block;
+  display: inline-block;
   padding: 1rem;
   font-size: 1.2rem;
 }
