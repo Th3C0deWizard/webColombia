@@ -88,8 +88,12 @@ main {
   }
 
   .card {
-    border: none;
+    border-radius: 1.5rem;
+    border: 1px rgba(255, 255, 255, 0.75) solid;
+    padding: 1rem;
     transition: 0.5s;
+    background: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.65);
   }
 
   .card:hover {
@@ -142,6 +146,11 @@ main {
   margin: auto;
   margin-block: 5rem;
   font-size: 1.3rem;
+}
+
+.meet-colombia {
+  background: linear-gradient(to right, #ebeaea, #d4ddfb);
+  padding-top: 0.1rem;
 }
 
 .meet-colombia h2 {
