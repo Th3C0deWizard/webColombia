@@ -6,8 +6,8 @@
 
 .logo {
   object-fit: scale-down;
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
 }
 
 nav {
@@ -24,12 +24,10 @@ nav {
   gap: 1rem;
   list-style-type: none;
   overflow: hidden;
-  height: 100%;
 }
 
 .header nav ul li a {
   display: inline-block;
-  padding: 1rem;
   font-size: 1.2rem;
 }
 
