@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
   <head>
     <title>Web Colombia</title>
@@ -74,7 +74,9 @@
           <h2>Escribe</h2>
           <p>
             <mark>Rellena el formulario</mark> a continuación sobre el nuevo
-            conocimiento que deseas aportar.
+            conocimiento que deseas aportar. En la información adicional cada
+            atributo esta compuesto por un nombre y un valor. Si no deseas
+            aportar información adicional, puedes dejar los campos vacíos.
           </p>
         </article>
         <article class="red">
@@ -95,86 +97,96 @@
           <section class="information">
             <fieldset class="required-information yellow">
               <legend>Información Principal</legend>
-              <div class="input-box">
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  autocomplete="off"
-                  required
-                />
-                <label for="name">Nombre</label>
-              </div>
-              <div class="input-box">
-                <select name="category" id="category" required>
-                  <option disabled selected>- ELIGE UNA OPCIÓN -</option>
-                  <optgroup label="Naturaleza">
-                    <option value="Reserva Natural">Reserva Natural</option>
-                    <option value="Parque Nacional">Parque Nacional</option>
-                    <option value="Playa">Playa</option>
-                  </optgroup>
-                  <optgroup label="Cultura">
-                    <option value="Museo">Museo</option>
-                    <option value="Festival">Festival</option>
-                    <option value="Gastronomía">Gastronomía</option>
-                  </optgroup>
-                  <optgroup label="Historia">
-                    <option value="Monumento">Monumento</option>
-                    <option value="Sitio Arqueológico">
-                      Sitio Arqueológico
-                    </option>
-                    <option value="Casa Histórica">Casa Histórica</option>
-                  </optgroup>
-                </select>
-                <label for="category">Categoria</label>
-              </div>
+              <section class="input-sec">
+                <div class="input-box">
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    autocomplete="off"
+                    required
+                  />
+                  <label for="name">Nombre *</label>
+                </div>
+                <div class="input-box">
+                  <select name="category" id="category" required>
+                    <option disabled selected>- ELIGE UNA OPCIÓN -</option>
+                    <optgroup label="Naturaleza">
+                      <option value="Reserva Natural">Reserva Natural</option>
+                      <option value="Parque Nacional">Parque Nacional</option>
+                      <option value="Playa">Playa</option>
+                    </optgroup>
+                    <optgroup label="Cultura">
+                      <option value="Museo">Museo</option>
+                      <option value="Festival">Festival</option>
+                      <option value="Gastronomía">Gastronomía</option>
+                    </optgroup>
+                    <optgroup label="Historia">
+                      <option value="Monumento">Monumento</option>
+                      <option value="Sitio Arqueológico">
+                        Sitio Arqueológico
+                      </option>
+                      <option value="Casa Histórica">Casa Histórica</option>
+                    </optgroup>
+                  </select>
+                  <label for="category">Categoria *</label>
+                </div>
+              </section>
               <div class="input-box">
                 <textarea
                   name="description"
                   id="description"
                   autocomplete="off"
-                  rows="7"
+                  rows="5"
                   required
-                >
-                </textarea>
-                <label for="description">Descripción</label>
+                ></textarea>
+                <label for="description">Descripción *</label>
               </div>
               <div class="input-box">
-                <input type="file" name="image" id="image" autocomplete="off" />
-                <label for="image">Imagen</label>
+                <input
+                  type="file"
+                  name="image"
+                  id="image"
+                  autocomplete="off"
+                  accept="image/jpeg, image/png"
+                />
+                <label for="image">Imagen *</label>
               </div>
             </fieldset>
             <fieldset class="optional-information blue">
               <legend>Información Adicional</legend>
-              <div class="input-box">
-                <input
-                  type="text"
-                  name="numeric"
-                  id="numeric"
-                  autocomplete="off"
-                  required
-                />
-                <label for="numeric">Nombre atributo númerico</label>
-              </div>
-              <div class="input-box">
-                <input
-                  type="number"
-                  name="numericValue"
-                  id="numericValue"
-                  autocomplete="off"
-                  required
-                />
-                <label for="numericValue">Valor númerico</label>
-              </div>
+              <section class="input-group">
+                <div class="input-box">
+                  <input
+                    type="text"
+                    name="numeric"
+                    id="numeric"
+                    autocomplete="off"
+                    optional
+                  />
+                  <label for="numeric">Nombre para atributo númerico</label>
+                </div>
+                <div class="input-box">
+                  <input
+                    type="number"
+                    name="numericValue"
+                    id="numericValue"
+                    autocomplete="off"
+                    optional
+                  />
+                  <label for="numericValue">Valor</label>
+                </div>
+              </section>
+              <div class="divider"></div>
               <div class="input-box">
                 <input
                   type="text"
                   name="text"
                   id="text"
                   autocomplete="off"
-                  required
+                  optional
                 />
-                <label for="text">Nombre atributo texto</label>
+                <label for="text">Nombre para atributo de texto</label>
               </div>
               <div class="input-box">
                 <input
@@ -182,43 +194,59 @@
                   name="textValue"
                   id="textValue"
                   autocomplete="off"
-                  required
+                  optional
                 />
-                <label for="textValue">Valor texto</label>
+                <label for="textValue">Valor</label>
               </div>
-              <div class="input-box">
-                <input
-                  type="text"
-                  name="date"
-                  id="date"
-                  autocomplete="off"
-                  required
-                />
-                <label for="date">Nombre atributo fecha</label>
-              </div>
-              <div class="input-box">
-                <input
-                  type="date"
-                  name="dateValue"
-                  id="dateValue"
-                  autocomplete="off"
-                />
-                <label for="dateValue">Valor fecha</label>
-              </div>
+              <div class="divider"></div>
+              <section class="input-group">
+                <div class="input-box">
+                  <input
+                    type="text"
+                    name="date"
+                    id="date"
+                    autocomplete="off"
+                    optional
+                  />
+                  <label for="date">Nombre para atributo fecha</label>
+                </div>
+                <div class="input-box">
+                  <input
+                    type="date"
+                    name="dateValue"
+                    id="dateValue"
+                    autocomplete="off"
+                    optional
+                  />
+                  <label for="dateValue">Valor</label>
+                </div>
+              </section>
             </fieldset>
           </section>
           <fieldset class="send-information red">
             <legend>Envio</legend>
-            <label for="anonym">¿Quiere que su envio sea anonimo?</label>
+            <label for="anonym">¿Quiere que su envio sea anónimo? *</label>
             <div class="radio">
-              <input type="radio" name="anonym" id="anonym" value="true" />
+              <input
+                type="radio"
+                name="anonym"
+                id="anonym"
+                value="true"
+                required
+              />
               Si
-              <input type="radio" name="anonym" id="anonym" value="false" />
+              <input
+                type="radio"
+                name="anonym"
+                id="anonym"
+                value="false"
+                required
+              />
               No
             </div>
             <div class="terms">
-              <input type="checkbox" name="terms" id="terms" />
-              <label for="terms">Acepta los terminos y condiciones</label>
+              <input type="checkbox" name="terms" id="terms" required />
+              <label for="terms">Acepta los términos y condiciones *</label>
             </div>
             <input type="submit" value="Enviar" />
           </fieldset>
