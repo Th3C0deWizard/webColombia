@@ -6,7 +6,7 @@ body {
 }
 
 .hero {
-  background-image: url("https://www.civitatis.com/f/zonas/region-andina/region-andina.jpg");
+  background-image: url("../static/cave.jpg");
   background-size: cover;
   min-height: 50vh;
   display: flex;
@@ -14,6 +14,7 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
+  opacity: 0.85;
 }
 
 .hero h1 {
