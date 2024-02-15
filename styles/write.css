@@ -1,12 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Quicksand", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 .hero {
-  background-image: url("https://www.civitatis.com/f/zonas/region-andina/region-andina.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../static/cave.jpg");
   background-size: cover;
   min-height: 50vh;
   display: flex;
@@ -14,18 +17,21 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
+  padding: 1rem;
 }
 
 .hero h1 {
-  font-size: 3em;
+  font-size: 4em;
   margin-bottom: 1.4rem;
+  text-align: center;
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: bold;
   margin-top: 0;
   width: 60%;
+  text-align: center;
 }
 
 .steps {

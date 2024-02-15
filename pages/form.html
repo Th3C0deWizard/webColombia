@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
   <head>
     <title>Web Colombia</title>
@@ -22,30 +22,29 @@
     <link rel="stylesheet" href="../styles/footer.css" />
     <link rel="stylesheet" href="../styles/header.css" />
     <link rel="icon" type="image/x-icon" href="../static/favicon1.ico" />
+    <script src="../scripts/script.js" defer></script>
   </head>
   <body>
     <header class="header">
-      <a href="/">
+      <a href="../index.html">
         <img class="logo" src="../static/logo2.jpg" alt="Web Colombia logo" />
       </a>
       <nav>
         <ul>
           <li>
             <i class="fa-solid fa-book-atlas"></i
-            ><a href="/index.html#meet">Meet Colombia!</a>
+            ><a href="../index.html#meet">¡Conoce a Colombia!</a>
           </li>
           <li>
             <i class="fa-regular fa-newspaper"></i
-            ><a href="/index.html#news">What's new?</a>
+            ><a href="../index.html#news">¿Qué hay de nuevo?</a>
           </li>
         </ul>
         <section class="righ-header">
-          <a href="/pages/write.html"
-            ><i class="fa-regular fa-comment fa-xl"></i
-          ></a>
+          <a href="write.html"><i class="fa-regular fa-comment fa-xl"></i></a>
           <div class="login-btn">
             <i class="fa-solid fa-right-to-bracket"></i
-            ><a href="/pages/form.html">Login</a>
+            ><a href="form.html">Ingresar</a>
           </div>
         </section>
       </nav>
@@ -78,7 +77,10 @@
                 type="text"
                 id="nombre"
                 name="nombre"
-                placeholder="Nombre(s)"
+                placeholder="Nombre(s) *"
+                required
+                autocomplete="on"
+                pattern="^(?:[A-ZÄËÏÖÜÁÉÍÓÚÂÊÎÔÛÀÈÌÒÙ][a-zäÄëËïÏöÖüÜáéíóúáéíóúÁÉÍÓÚÂÊÎÔÛâêîôûàèìòùÀÈÌÒÙ]+(?:\s+[a-zäÄëËïÏöÖüÜáéíóúáéíóúÁÉÍÓÚÂÊÎÔÛâêîôûàèìòùÀÈÌÒÙ]+)+)$"
               />
             </div>
             <div class="input-container">
@@ -87,12 +89,23 @@
                 type="text"
                 id="apellido"
                 name="apellido"
-                placeholder="Apellido(s)"
+                placeholder="Apellido(s) *"
+                required
+                autocomplete="on"
+                pattern="^(?:[A-ZÄËÏÖÜÁÉÍÓÚÂÊÎÔÛÀÈÌÒÙ][a-zäÄëËïÏöÖüÜáéíóúáéíóúÁÉÍÓÚÂÊÎÔÛâêîôûàèìòùÀÈÌÒÙ]+(?:\s+[a-zäÄëËïÏöÖüÜáéíóúáéíóúÁÉÍÓÚÂÊÎÔÛâêîôûàèìòùÀÈÌÒÙ]+)+)$"
               />
             </div>
             <div class="input-container">
               <i class="fa-solid fa-envelope"></i>
-              <input type="email" id="email" name="email" placeholder="Email" />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email *"
+                required
+                autocomplete="on"
+                pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,5}"
+              />
             </div>
             <div class="input-container">
               <i class="fa-solid fa-phone"></i>
@@ -100,7 +113,9 @@
                 type="tel"
                 id="telefono"
                 name="telefono"
-                placeholder="Celular"
+                placeholder="Celular *"
+                required
+                autocomplete="on"
               />
             </div>
             <div class="input-container">
@@ -109,7 +124,9 @@
                 type="date"
                 id="birthday"
                 name="birthday"
-                placeholder="Fecha cumpleaños"
+                placeholder="Fecha cumpleaños *"
+                required
+                autocomplete="on"
               />
             </div>
             <div class="input-container">
@@ -118,10 +135,13 @@
                 type="password"
                 id="password"
                 name="password"
-                placeholder="Contraseña"
+                placeholder="Contraseña *"
+                required
+                autocomplete="on"
+                pattern="/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$/"
               />
             </div>
-            <input type="submit" value="Registarse" class="submit" />
+            <input type="submit" value="Registarse" class="submit" required />
           </form>
         </section>
         <section class="form-container sign-in">
@@ -141,7 +161,14 @@
             </fieldset>
             <div class="input-container">
               <i class="fa-solid fa-envelope"></i>
-              <input type="email" id="email" name="email" placeholder="Email" />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email *"
+                autocomplete="on"
+                pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,5}"
+              />
             </div>
             <div class="input-container">
               <i class="fa-solid fa-lock"></i>
@@ -149,7 +176,9 @@
                 type="password"
                 id="password"
                 name="password"
-                placeholder="Contraseña"
+                placeholder="Contraseña *"
+                autocomplete="on"
+                pattern="/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$/"
               />
             </div>
             <a href="#">¿Olvidaste la contraseña?</a>
@@ -158,7 +187,7 @@
         </section>
         <aside class="info-container">
           <div class="info-panel info-left">
-            <h1>¿Ya estas registardo?</h1>
+            <h1>¿Ya estás registrado?</h1>
             <p>
               Ingresa tus credenciales para seguir aportando y hacer de Colombia
               una potencia del turismo y conocimiento
@@ -173,10 +202,10 @@
           <div class="info-panel info-right">
             <h1>
               Q'hubo parcero!<br />
-              ¿Aún no estas registrado?
+              ¿Aún no estás registrado?
             </h1>
             <p>
-              Registarte para aportar al conocimiento sobre Colombia y para
+              Registrarte para aportar al conocimiento sobre Colombia y para
               hacer parte de esta familia. <br />
               Nuestro objetivo es hacer de Colombia un país más educado y
               turístico, además de dar a conocer nuestra Cultura y Tradiciones.
@@ -202,13 +231,12 @@
       </section>
       <ul class="footer-list">
         <li class="footer-col"><a href="#">Home</a></li>
-        <li class="footer-col"><a href="#">Services</a></li>
-        <li class="footer-col"><a href="#">About</a></li>
-        <li class="footer-col"><a href="#">Terms</a></li>
-        <li class="footer-col"><a href="#">Privacy Policy</a></li>
+        <li class="footer-col"><a href="#">Servicios</a></li>
+        <li class="footer-col"><a href="#">Acerca de</a></li>
+        <li class="footer-col"><a href="#">Términos</a></li>
+        <li class="footer-col"><a href="#">Políticas de privacidad</a></li>
       </ul>
       <p class="copyright">JustTwoDevs © 2024</p>
     </footer>
-    <script src="../script.js"></script>
   </body>
 </html>
